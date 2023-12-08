@@ -15,16 +15,17 @@ export default {
         "border-menu": "rgb(244, 165, 96, 0.249)",
         "main-title": "rgb(244, 244, 245)",
         "sub-title": "rgb(161, 161, 170)",
+        "bg-input":"rgba(63, 63, 70, 0.15)"
         // "sub-dark": "#252466",
         // "main-dark": "#41427D",
         // "text-color": "#FCFCFC",
         // "text-gray": "#667085",
         // "text-primary": "#9795B5",
       },
-      // gridTemplateColumns: {
-      //   prod: "repeat(auto-fit, minmax(130px, 1fr))",
-      //   plog: "repeat(auto-fit, minmax(300px, 1fr))",
-      // },
+      gridTemplateColumns: {
+        prod: "repeat(auto-fit, minmax(130px, 1fr))",
+        plog: "repeat(auto-fit, minmax(220px, 1fr))",
+      },
     },
   },
   plugins: [],
