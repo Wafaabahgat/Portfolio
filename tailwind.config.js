@@ -10,6 +10,7 @@ export default {
         "text-primary": "#000",
         "bg-header": "rgb(39, 39, 42)",
         "bg-menu": "rgba(40,40, 48, 0.91)",
+        "bg-card": "rgba(93,188, 252, 0.3)",
         "bg-border": "rgb(63, 63, 70, 0.4)",
         "border-menu": "rgb(244, 165, 96, 0.249)",
         "main-title": "rgb(244, 244, 245)",

@@ -41,6 +41,7 @@ const Hero: FC<HeroProps> = () => {
           <Lottie className="" style={{ height: 355 }} animationData={herobg} />
         </div>
       </div>
+      <div className="line"></div>
     </>
   );
 };

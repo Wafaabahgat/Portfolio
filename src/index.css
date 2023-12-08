@@ -36,7 +36,10 @@ html {
 }
 .line {
   border: 1px solid var(--border);
-  margin: 1rem 0;
+  margin: 3rem 0;
+}
+.button_active:active {
+  @apply opacity-100 font-bold px-[0.8rem] border-main-light border;
 }
 
 li {
