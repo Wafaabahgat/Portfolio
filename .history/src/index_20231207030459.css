@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary: #000;
+  --secondary: rgb(24 24 27);
+  --border: rgb(63, 63, 70, 0.4);
+}
+.light {
+  --primary: #fff;
+}
+
+body {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+html {
+  /* max-width: 2000px; */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--secondary);
+  border: 2px solid var(--border);
+}
+
+.line {
+  border: 1px solid var(--border);
+  margin: 1rem 0;
+}
+.border-h {
+  border: 2px solid var(--border);
+}
+li {
+  list-style: none;
+}
