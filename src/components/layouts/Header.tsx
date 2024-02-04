@@ -60,7 +60,7 @@ const Header: FC<HeaderProps> = () => {
           </div>
         </div>
         {showMenu && (
-          <div className="fixed py-3 z-11 inset-0 max-w-[85%] max-h-[48%] backdrop-blur-[8px] mt-10 bg-bg-menu mx-auto rounded-2xl">
+          <div className="fixed py-4 z-11 inset-0 max-w-[85%] max-h-[48%] backdrop-blur-[8px] mt-10 bg-bg-menu mx-auto rounded-2xl">
             <span className="flex justify-end mr-4">
               <button
                 onClick={() => {
