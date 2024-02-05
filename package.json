@@ -10,11 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@formspree/react": "^2.5.1",
     "clsx": "^2.0.0",
     "lottie-react": "^2.4.0",
     "path": "^0.12.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hot-toast": "^2.4.1",
     "react-icons": "^4.12.0",
     "react-router-dom": "^6.20.1",
     "resolve-path": "^1.4.0",
@@ -33,7 +35,7 @@
     "eslint-plugin-react-refresh": "^0.4.3",
     "postcss": "^8.4.32",
     "tailwindcss": "^3.3.6",
-    "typescript": "^5.0.2",
+    "typescript": "^5.3.3",
     "vite": "^4.4.5"
   }
 }

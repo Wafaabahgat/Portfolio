@@ -1,11 +1,18 @@
 import { FC } from "react";
 import { FaEnvelope } from "react-icons/fa";
 import Button from "../ui/Button";
-import Lottie from "lottie-React";
-import herobg from "@assets/animation/heroimg";
+import Lottie from "lottie-react";
+import herobg from "../../assets/animation/heroimg.json";
+import { useForm, ValidationError } from "@formspree/react";
+import toast from "react-hot-toast";
+
 interface ContactProps {}
 
 const Contact: FC<ContactProps> = () => {
+  const [state, handleSubmit] = useForm("mrgnplzb");
+  // if (state.succeeded) {
+  //   return <h1>Thanks for joining!</h1>;
+  // }
   return (
     <>
       <div className="ml-20">
@@ -22,7 +29,8 @@ const Contact: FC<ContactProps> = () => {
           </p>
         </div>
         <div className="grid md:grid-cols-2 grid-cols-1">
-          <form className="">
+          {/* form */}
+          <form className="" onSubmit={handleSubmit}>
             <div className="flex items-center gap-5 ">
               <label className="capitalize text-sub-title" htmlFor="email">
                 email address :
@@ -30,7 +38,15 @@ const Contact: FC<ContactProps> = () => {
               <input
                 placeholder="Email Address"
                 type="email"
+                id="email"
+                name="email"
+                required
                 className=" bg-bg-input p-2 rounded-md border border-bg-border hover:border-main-light"
+              />
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
               />
             </div>
             <div className="flex items-center gap-4 my-12">
@@ -38,13 +54,20 @@ const Contact: FC<ContactProps> = () => {
                 your message :
               </label>
               <textarea
-                name=""
+                name="message"
                 id="message"
                 className="bg-bg-input border hover:border-main-light border-bg-border p-10 rounded-md"
               ></textarea>
+              <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
+              />
             </div>
-            <Button name="submit" className="px-7" />
+            <Button name="submit" type="submit" className="px-7" />
+            {state.succeeded && toast.success("Message Send Successfully")}
           </form>
+
           <div className="">
             <Lottie
               className=""

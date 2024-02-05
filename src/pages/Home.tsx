@@ -1,7 +1,7 @@
 import { FC } from "react";
-import Hero from "@components/home/Hero";
-import Main from "@components/home/main/Main";
-import Contact from "@components/home/Contact";
+import Hero from "../components/home/Hero";
+import Main from "../components/home/main/Main";
+import Contact from "../components/home/Contact";
 
 interface HomeProps {}
 

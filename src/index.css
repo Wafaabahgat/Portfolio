@@ -5,6 +5,7 @@
 * {
   font-family: "Poppins", sans-serif;
   letter-spacing: 0.3px;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -51,4 +52,35 @@ a {
 }
 .border-li:last-child {
   border: none;
+}
+.footer {
+  @apply text-sm text-sub-title hover:text-main-light;
+}
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+::-webkit-scrollbar-track {
+  border: 7px solid #232943;
+  box-shadow: inset 0 0 2.5px rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 1rem;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/* html {
+  scrollbar-color: #9e4673 #3d4a59;
+} */
+
+.icon-keyboard_arrow_up::before {
+  content: "/e904";
+}
+.icon-verified::before {
+  content: "/e905";
+}
+.scrollTop {
+  @apply fixed bg-main-light bottom-[2rem] rounded-[50%] text-xl flex items-center justify-center right-[3%] w-[2.6rem] h-[2.6rem];
 }

@@ -3,8 +3,10 @@ import avatar from "@assets/avatar1.png";
 import { MdVerified } from "react-icons/md";
 import { FaFacebookSquare, FaLinkedin, FaGithub } from "react-icons/fa";
 import { FiTwitter } from "react-icons/fi";
-import Lottie from "lottie-React";
-import herobg from "@assets/animation/heroimg";
+import Lottie from "lottie-react";
+
+
+import herobg from "../../assets/animation/heroimg.json";
 
 interface HeroProps {}
 
