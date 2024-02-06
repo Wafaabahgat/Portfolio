@@ -26,7 +26,7 @@ const Root = () => {
 
       <a
         href="#up"
-        style={{ opacity: showScrollBtn ? 1 : 0, transition: "2s" }}
+        style={{ opacity: showScrollBtn ? 1 : 0, transition: "1s" }}
       >
         <button className="scrollTop">
           <IoIosArrowUp />
