@@ -41,6 +41,7 @@ const Contact: FC<ContactProps> = () => {
                 id="email"
                 name="email"
                 required
+                autoComplete="off"
                 className=" bg-bg-input p-2 rounded-md border border-bg-border hover:border-main-light"
               />
               <ValidationError
